@@ -85,6 +85,10 @@ a:hover{
 	html{
 		font-size: 140%;
 	}
+
+	#description{
+		font-size: 1.25em;
+	}
 }
 
 
