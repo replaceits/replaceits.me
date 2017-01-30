@@ -1,16 +1,11 @@
 html, body{
 	margin: 0;
-
 	min-width: 100%;
 	width: 100%;
 	max-width: 100%;
-
 	font-size: 100%;
-
 	overflow: hidden;
-
 	background: #444444 url("../images/bgnoise.png") repeat;
-
 	color: #BAD4DC;
 	font-family: 'Lato', sans-serif;
 }
@@ -29,7 +24,7 @@ a:hover{
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%,-50%) ;
+	transform: translate(-50%,-50%);
 	width: 35em;
 	display: flex;
 	justify-items: space-between;
@@ -50,6 +45,14 @@ a:hover{
 	text-shadow: -1px 1px 1px rgba(0,0,0,0.25);
 }
 
+#description{
+	flex: 1 1 0;
+	align-self: center;
+	text-align: justify;
+    text-justify: inter-word;
+	vertical-align: middle;
+	width: 30em;
+}
 
 #findme{
 	display: flex;
@@ -68,3 +71,13 @@ a:hover{
 	vertical-align: middle;
 	text-shadow: -1px 1px 2px rgba(0,0,0,0.5);
 }
+
+#footer{
+	font-size: 1.125em;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	margin-bottom: 5px;
+}
+
