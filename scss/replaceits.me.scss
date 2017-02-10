@@ -1,0 +1,105 @@
+@import "variables/general";
+@import "variables/colors";
+@import "variables/fonts";
+@import "variables/images";
+
+html, body{
+	margin: 0;
+	min-width: 100%;
+	width: 100%;
+	max-width: 100%;
+	font-size: 100%;
+	overflow: hidden;
+	background: $color-background $image-background-noise repeat;
+	color: $color-primary;
+	font-family: 'Lato', sans-serif;
+}
+
+a{
+	&, &:visited, &:active, &:link{
+		text-decoration: none;
+		color: $color-primary;
+		transition: color 1s ease;
+	}
+
+	&:hover{
+		text-decoration: none;
+		color: $color-secondary;
+	}
+}
+
+#content-container{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 35em;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	align-items: stretch;
+	flex-wrap: nowrap;
+}
+
+
+#coming, .find-me-item{
+	flex: 1 1 0;
+	align-self: center;
+	text-align: center;
+	vertical-align: middle;
+	font-weight: 700;
+	font-size: 4em;
+	letter-spacing: 0.05em;
+	text-shadow: -1px 1px 1px rgba(0,0,0,0.25);
+}
+
+#description{
+	flex: 1 1 0;
+	align-self: center;
+	text-align: justify;
+    text-justify: inter-word;
+	vertical-align: middle;
+	width: 30em;
+}
+
+#find-me{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	align-content: stretch;
+}
+
+.find-me-item{
+	display: inline;
+	flex-grow: 1;
+	flex-basis: auto;
+	align-self: center;
+	text-align: center;
+	vertical-align: middle;
+	text-shadow: -1px 1px 2px rgba(0,0,0,0.5);
+}
+
+#footer{
+	font-size: 1.125em;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	margin-bottom: 5px;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px){
+	html{
+		font-size: 140%;
+	}
+
+	#description{
+		font-size: 1.25em;
+		width: 25em;
+	}
+
+	#footer{
+		font-size: 1.25em;
+	}
+}
