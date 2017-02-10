@@ -1,32 +1,16 @@
+////Variables////
 @import "variables/general";
 @import "variables/colors";
 @import "variables/fonts";
 @import "variables/images";
 
-html, body{
-	margin: 0;
-	min-width: 100%;
-	width: 100%;
-	max-width: 100%;
-	font-size: 100%;
-	overflow: hidden;
-	background: $color-background $image-background-noise repeat;
-	color: $color-primary;
-	font-family: 'Lato', sans-serif;
-}
+////Layout////
+@import "layout/base";
+@import "layout/footer";
 
-a{
-	&, &:visited, &:active, &:link{
-		text-decoration: none;
-		color: $color-primary;
-		transition: color 1s ease;
-	}
-
-	&:hover{
-		text-decoration: none;
-		color: $color-secondary;
-	}
-}
+////Components////
+@import "components/anchor";
+@import "components/buttons";
 
 #content-container{
 	position: absolute;
@@ -36,72 +20,72 @@ a{
 	width: 35em;
 	display: flex;
 	flex-direction: column;
-	align-content: center;
-	align-items: stretch;
+
+	align : {
+		content: center;
+		items: stretch;
+	}
+
 	flex-wrap: nowrap;
 }
 
 #header-name, .find-me-item{
 	flex: 1 1 0;
 	align-self: center;
-	text-align: center;
 	vertical-align: middle;
-	font-weight: 700;
-	font-size: 4em;
+
+	font : {
+		weight: 700;
+		size: 4em;
+	}
+
+	text : {
+		align: center;
+		shadow: -1px 1px 1px rgba(0,0,0,0.25);
+	}
+
 	letter-spacing: 0.05em;
-	text-shadow: -1px 1px 1px rgba(0,0,0,0.25);
 }
 
 #find-me{
 	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	align-items: center;
-	align-content: stretch;
+	
+	flex : {
+		direction: row;
+		wrap: nowrap;
+	}
+
+	align : {
+		items: center;
+		content: stretch;
+	}
 }
 
 .find-me-item{
 	display: inline;
-	flex-grow: 1;
-	flex-basis: auto;
+
+	flex : {
+		grow: 1;
+		basis: auto;
+	}
+
 	align-self: center;
 	text-align: center;
 	vertical-align: middle;
-}
-
-.icon-button{
-	text-shadow: -1px 1px 2px rgba(0,0,0,0.5);
 }
 
 #description{
 	flex: 1 1 0;
-	align-self: center;
-	text-align: justify;
-    text-justify: inter-word;
-	vertical-align: middle;
 	width: 30em;
-}
-
-#footer{
-	font-size: 1.125em;
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	text-align: center;
-	margin-bottom: 5px;
-}
-
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px){
-	html{
-		font-size: 140%;
+	
+	text : {
+		align: justify;
+		justify: inter-word;
 	}
 
-	#description{
-		font-size: 1.25em;
-		width: 25em;
-	}
-
-	#footer{
-		font-size: 1.25em;
-	}
+	align-self: center;
+	vertical-align: middle;
 }
+
+////Mobile////
+@import "layout/mobile";

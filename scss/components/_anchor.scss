@@ -1,0 +1,12 @@
+a{
+	&, &:visited, &:active, &:link{
+		text-decoration: none;
+		color: $color-primary;
+		transition: color 1s ease;
+	}
+
+	&:hover{
+		text-decoration: none;
+		color: $color-secondary;
+	}
+}

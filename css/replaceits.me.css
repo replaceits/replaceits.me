@@ -7,7 +7,15 @@ html, body {
   overflow: hidden;
   background: #444444 url("../images/bgnoise.png") repeat;
   color: #BAD4DC;
-  font-family: 'Lato', sans-serif; }
+  font-family: "Lato", sans-serif; }
+
+#footer {
+  font-size: 1.125em;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 5px; }
 
 a, a:visited, a:active, a:link {
   text-decoration: none;
@@ -16,6 +24,9 @@ a, a:visited, a:active, a:link {
 a:hover {
   text-decoration: none;
   color: #99B3BB; }
+
+.icon-button {
+  text-shadow: -1px 1px 2px rgba(0, 0, 0, 0.5); }
 
 #content-container {
   position: absolute;
@@ -32,12 +43,12 @@ a:hover {
 #header-name, .find-me-item {
   flex: 1 1 0;
   align-self: center;
-  text-align: center;
   vertical-align: middle;
   font-weight: 700;
   font-size: 4em;
-  letter-spacing: 0.05em;
-  text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.25); }
+  text-align: center;
+  text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.25);
+  letter-spacing: 0.05em; }
 
 #find-me {
   display: flex;
@@ -54,24 +65,13 @@ a:hover {
   text-align: center;
   vertical-align: middle; }
 
-.icon-button {
-  text-shadow: -1px 1px 2px rgba(0, 0, 0, 0.5); }
-
 #description {
   flex: 1 1 0;
-  align-self: center;
+  width: 30em;
   text-align: justify;
   text-justify: inter-word;
-  vertical-align: middle;
-  width: 30em; }
-
-#footer {
-  font-size: 1.125em;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-  margin-bottom: 5px; }
+  align-self: center;
+  vertical-align: middle; }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   html {
