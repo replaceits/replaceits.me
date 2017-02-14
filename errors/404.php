@@ -20,7 +20,7 @@
 			<div class="content-container">
 				<div class="header-name">404 - Not found!</div>
 				<div class="description center">
-					We're sorry but the page "<?php echo(strip_tags($_SERVER['REQUEST_URI'])); ?>" couldn't be found on this server!
+					We're sorry but the page "<?php echo(htmlspecialchars(strip_tags($_SERVER['REQUEST_URI']))); ?>" couldn't be found on this server!
 				</div>
 			</div>
 		</div>
