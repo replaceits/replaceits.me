@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /scss/
+Disallow: /errors/
+Allow: /
+
+Sitemap: https://www.replaceits.me/sitemap.xml
