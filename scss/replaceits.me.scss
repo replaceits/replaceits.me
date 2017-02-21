@@ -47,6 +47,13 @@
 	&#Skills{
 		background: $color-background-skills $image-background-noise repeat;
 		color: $color-skills;
+		padding-top: 0px;
+
+		& .content-header{
+			padding-top: 50px;
+			padding-bottom: 50px;
+			background: $color-background-skills-header $image-background-noise repeat;
+		}
 	}
 
 	&#Projects{
@@ -193,6 +200,10 @@
 	display: flex;
 	flex-wrap: wrap;
 	align-content: space-between;
+}
+
+.content-project-divider{
+	height: 4em;
 }
 
 .content-project-image-container{
