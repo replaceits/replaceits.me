@@ -11,24 +11,32 @@ $(document).ready(function(){
             easing: 'swing'
         });
     });
-    
-    // Prevent image links from being pressed until hovering over the image.
-    // This prevents accidental clicking of the image controls on mobile,
-    // when touching the image. 
-    $('.content-project-image-container').hover(function(){
-        // On mouse enter enable the link
-        setTimeout(function(anchor){
-            anchor.children('.content-project-image-controls').children('a').unbind('click').click(function(event){
-                return true;
+
+    //Check if mobile device
+    if(window.matchMedia("only screen and (min-device-width: 320px) and (max-device-width: 480px)")){
+        //This will prevent the page from jumping when the address bar hides
+        $('.content-page.full').css('height',$('.content-page.full').height() + 'px').css('min-height',$('.content-page.full').height() + 'px');
+
+        // Prevent image links from being pressed until hovering over the image.
+        // This prevents accidental clicking of the image controls on mobile,
+        // when touching the image. 
+        $('.content-project-image-container').hover(function(){
+            // On mouse enter enable the link
+            setTimeout(function(anchor){
+                anchor.children('.content-project-image-controls').children('a').unbind('click').click(function(event){
+                    return true;
+                });
+            },50,$(this));
+        },function(){
+            // On mouse leave disable the link
+            $(this).children('.content-project-image-controls').children('a').unbind('click').click(function(event){
+                return false;
             });
-        },50,$(this));
-    },function(){
-        // On mouse leave disable the link
-        $(this).children('.content-project-image-controls').children('a').unbind('click').click(function(event){
+        }).children('.content-project-image-controls').children('a').unbind('click').click(function(event){
+            // Disable all image links on first load
             return false;
         });
-    }).children('.content-project-image-controls').children('a').unbind('click').click(function(event){
-        // Disable all image links on first load
-        return false;
-    });
+
+    }
+
 });
