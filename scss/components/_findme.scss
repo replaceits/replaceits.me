@@ -1,0 +1,29 @@
+.find-me{
+	display: flex;
+	
+	flex : {
+		direction: row;
+		wrap: nowrap;
+	}
+
+	align : {
+		items: center;
+		content: stretch;
+	}
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+.find-me-item{
+	display: inline;
+
+	flex : {
+		grow: 1;
+		basis: auto;
+	}
+
+	align-self: center;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 3.25em;
+}

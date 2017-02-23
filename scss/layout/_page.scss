@@ -1,0 +1,78 @@
+.content-page{
+	position: relative;
+	min-width: 100vw;
+	width: 100vw;
+
+	padding-top: 50px;
+	padding-bottom: 50px;
+
+	background-size: cover;
+
+	display: flex;
+	justify-content: center;
+
+	align: {
+		content: center;
+		items: center;
+	}
+
+	&.full{
+		height:100vh;
+		min-height:100vh;
+		padding-top: 0px;
+		padding-bottom: 0px;
+	}
+
+	&#Skills{
+		background: $color-background-skills $image-background-noise repeat;
+		color: $color-skills;
+		padding-top: 0px;
+
+		& .content-header{
+			padding-top: 50px;
+			padding-bottom: 50px;
+			background: $color-background-skills-header $image-background-noise repeat;
+		}
+	}
+
+	&#Projects{
+		background: $color-background-projects $image-background-noise repeat;
+		color: $color-skills;
+		padding-bottom: 0px;
+
+		& .content-header{
+			padding-bottom: 50px;
+		}
+
+		& #Kana-Totsugeki{
+			background: $color-background-kana-totsugeki $image-background-noise repeat;
+		}
+
+		& #Replaceits{
+			background: $color-background-kana-replaceits $image-background-noise repeat;
+		}
+	}
+
+	&#Footer{
+		padding: 0.1em;
+	}
+}
+
+.content-wrapper{
+	width: 100vw;
+
+	#Home &{
+		width: 41em;
+		max-width: 41em;
+	}
+	
+	display: flex;
+	flex-direction: column;
+
+	align : {
+		content: center;
+		items: stretch;
+	}
+
+	flex-wrap: nowrap;
+}
