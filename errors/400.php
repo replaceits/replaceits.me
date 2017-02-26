@@ -14,11 +14,13 @@
 	</head>
 
 	<body>
-		<div class="body-wrapper">
-			<div class="content-container">
-				<div class="header-name">400 - Bad Request!</div>
-				<div class="description center">
-					Uh-oh, your browser might be having a hicup.
+		<div class="content-container">
+			<div class="content-page full">
+				<div class="content-container">
+					<div class="header-name">400 - Bad Request!</div>
+					<div class="description center">
+						Uh-oh, your browser might be having a hicup.
+					</div>
 				</div>
 			</div>
 		</div>

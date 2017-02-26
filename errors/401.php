@@ -14,11 +14,13 @@
 	</head>
 
 	<body>
-		<div class="body-wrapper">
-			<div class="content-container">
-				<div class="header-name">401 - Unauthorized!</div>
-				<div class="description center">
-					We're sorry but you aren't allowed to do that.
+		<div class="content-container">
+			<div class="content-page full">
+				<div class="content-container">
+					<div class="header-name">401 - Unauthorized!</div>
+					<div class="description center">
+						We're sorry but you aren't allowed to do that.
+					</div>
 				</div>
 			</div>
 		</div>

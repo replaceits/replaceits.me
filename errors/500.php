@@ -14,11 +14,13 @@
 	</head>
 
 	<body>
-		<div class="body-wrapper">
-			<div class="content-container">
-				<div class="header-name">500 - Internal Server Error!</div>
-				<div class="description center">
-					It looks like I broke something...
+		<div class="content-container">
+			<div class="content-page full">
+				<div class="content-container">
+					<div class="header-name">500 - Internal Server Error!</div>
+					<div class="description center">
+						It looks like I broke something...
+					</div>
 				</div>
 			</div>
 		</div>
