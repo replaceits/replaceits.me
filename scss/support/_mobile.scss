@@ -54,4 +54,31 @@
 			}
 		}
 	}
+
+	.contact-form{
+		min-width: 90vw;
+		width: 90vw;
+		max-width: 90vw;
+
+		& .contact-info{
+			flex-direction: column;
+
+			& input{
+				min-width: 100%;
+				width: 100%;
+				max-width: 100%;
+
+				&#input-name{
+					margin-right: 0px;
+					margin-bottom: 0.5rem;
+				}
+			}
+		}
+	}
+
+	.submit-button{
+		min-width: 100%;
+		width: 100%;
+		max-width: 100%;
+	}
 }

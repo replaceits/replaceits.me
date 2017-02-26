@@ -1,2 +1,17 @@
 .icon-button{
 }
+
+.submit-button{
+    font-size: 1.5em;
+    height: 1.5em;
+    line-height: 1.5em;
+    width: 4em;
+    border: 1px solid rgba(0,0,0,0);
+    border-radius: 2px;
+    background: rgba(255,255,255,0.15);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    text-align: center;
+    cursor: pointer;
+    margin: auto;
+    display: none;
+}

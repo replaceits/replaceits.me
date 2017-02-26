@@ -39,7 +39,7 @@ FILES_TMP_TARGET_PATH = $(shell echo $(FILES_TARGET_PATH) | $(ESCAPE_SED))
 FILES_TARGETS     = $(shell echo $(FILES_FILES) | sed 's/$(FILES_TMP_TARGET)/$(FILES_TMP_TARGET_PATH)/g')
 
 HTML_FILE = index.html
-MISC_FILES = humans.txt robots.txt sitemap.xml favicon.ico
+MISC_FILES = humans.txt robots.txt sitemap.xml favicon.ico message.php
 
 BUILD_PATH_ESCAPED = $(shell echo $(BUILD_PATH) | $(ESCAPE_SED))
 HTML_FILE_TARGET = $(shell echo $(HTML_FILE) | sed 's/^/$(BUILD_PATH_ESCAPED)/g')

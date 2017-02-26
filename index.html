@@ -45,6 +45,7 @@
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<script src="js/replaceits.me.js"></script>
+		<script src='https://www.google.com/recaptcha/api.js'></script>
 	</head>
 
 	<body>
@@ -274,6 +275,36 @@
 
 				</div>
 			</div>
+
+			<div class="content-page" id="Contact">
+				<div class="content-wrapper">
+					<div class="content-sub-header">
+						Contact
+					</div>
+					<div class="contact-form">
+						<div class="contact-info">
+							<input type="text" id="input-name" maxlength="255" placeholder="Name" required>
+							<input type="email" id="input-email" maxlength="255" placeholder="Email" required>
+						</div>
+						<textarea maxlength="4000" id="input-message" placeholder="Type your message..." required></textarea>
+						<div class="g-recaptcha" id="g-recaptcha" data-callback="recaptchaCallback" data-expired-callback="recaptchaExpiredCallback" data-theme="dark" data-sitekey="6LcFJhUUAAAAAFgr8GRnQLjSX_XDSY5qrRWlkOpC"></div>
+						<div class="submit-button">Submit</div>
+					</div>
+					<div class="contact-complete">
+						<div class="contact-success">
+							<span class="content-sub-header">Your message has been sent</span>
+							<br>
+							I'll get back to you as soon as possible!
+						</div>
+						<div class="contact-failure">
+							<span class="content-sub-header">Your message couldn't be sent</span>
+							<br>
+							<span class="contact-failure-status"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+
 			<div class="content-page" id="Footer">
 				<div class="content-wrapper">
 					<div class="content-footer-item">
