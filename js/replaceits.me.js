@@ -39,6 +39,8 @@ function emailNameChange(){
 }
 
 function messageNameChange(){
+    $('.input-count').text($(this).val().length);
+
     valid_message = $(this).val().length > 0 && $(this).val().length <= 5000;
     if(valid_message){
         $(this).removeClass('invalid');

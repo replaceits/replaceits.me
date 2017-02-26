@@ -283,10 +283,11 @@
 					</div>
 					<div class="contact-form">
 						<div class="contact-info">
-							<input type="text" id="input-name" maxlength="255" placeholder="Name" required>
-							<input type="email" id="input-email" maxlength="255" placeholder="Email" required>
+							<input type="text" id="input-name" name="name" maxlength="255" placeholder="Name" autocomplete="name" required>
+							<input type="email" id="input-email" name="email" maxlength="255" placeholder="Email" autocomplete="email" required>
 						</div>
-						<textarea maxlength="4000" id="input-message" placeholder="Type your message..." required></textarea>
+						<textarea maxlength="5000" id="input-message" placeholder="Type your message..." autocomplete="false" required></textarea>
+						<span class="right"><span class="input-count">0</span>/5000</span>
 						<div class="g-recaptcha" id="g-recaptcha" data-callback="recaptchaCallback" data-expired-callback="recaptchaExpiredCallback" data-theme="dark" data-sitekey="6LcFJhUUAAAAAFgr8GRnQLjSX_XDSY5qrRWlkOpC"></div>
 						<div class="submit-button">Submit</div>
 					</div>
