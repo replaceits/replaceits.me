@@ -71,7 +71,7 @@ $(document).ready(function(){
         if(captcha_filled && valid_email && valid_name && valid_message && grecaptcha.getResponse() !== null){
             $.ajax({
                 method: 'POST',
-                url: 'message.php',
+                url: 'https://www.replaceits.me/message.php',
                 cache: false,
                 data: "name="+encodeURIComponent($('#input-name').val())+"&email="+encodeURIComponent($('#input-email').val())+"&message="+encodeURIComponent($('#input-message').val())+"&g-recaptcha-response="+encodeURIComponent(grecaptcha.getResponse())
             }).done( function( msg ){

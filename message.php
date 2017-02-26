@@ -63,7 +63,7 @@
         ];
 
         $context  = stream_context_create($options);
-        $result = file_get_contents($url, false, $context);
+        $result = file_get_contents($url, false, $context); 
         $valid_captcha = json_decode($result)->success;
     }
     catch (Exception $e) {
