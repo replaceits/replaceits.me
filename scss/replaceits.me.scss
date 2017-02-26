@@ -4,6 +4,9 @@
 @import "variables/fonts";
 @import "variables/images";
 
+////Keyframes////
+@import "keyframes/spinner";
+
 ////Layout////
 @import "layout/base";
 @import "layout/page";
@@ -18,6 +21,7 @@
 @import "components/findme";
 @import "components/images";
 @import "components/contact";
+@import "components/spinner";
 @import "components/misc";
 
 ////Overrides////

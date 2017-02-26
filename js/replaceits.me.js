@@ -69,6 +69,8 @@ $(document).ready(function(){
         valid_message = $('#input-message').val().length > 0 && $('#input-message').val().length <= 5000;
 
         if(captcha_filled && valid_email && valid_name && valid_message && grecaptcha.getResponse() !== null){
+            $('.contact-form').css('visibility','hidden');
+            $('.contact-loading').show();
             $.ajax({
                 method: 'POST',
                 url: 'https://www.replaceits.me/message.php',
@@ -76,10 +78,12 @@ $(document).ready(function(){
                 data: "name="+encodeURIComponent($('#input-name').val())+"&email="+encodeURIComponent($('#input-email').val())+"&message="+encodeURIComponent($('#input-message').val())+"&g-recaptcha-response="+encodeURIComponent(grecaptcha.getResponse())
             }).done( function( msg ){
                 $('.contact-form').hide();
+                $('.contact-loading').hide();
                 $('.contact-complete').show();
                 $('.contact-success').show();
             }).fail( function( jqXHR, textStatus ){
                 $('.contact-form').hide();
+                $('.contact-loading').hide();
                 $('.contact-complete').show();
                 $('.contact-failure').show();
                 switch(jqXHR.status){
