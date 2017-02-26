@@ -8,11 +8,9 @@
 
 		<base href="https://www.replaceits.me/">
 
-		<link rel="stylesheet" href="css/replaceits.me.css?v=0.4">
+		<link rel="stylesheet" href="css/replaceits.me.css?v=0.5">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 		<link rel="shortcut icon" href="favicon.ico">
-
-		<script async src="js/console.js"></script>
 	</head>
 
 	<body>
