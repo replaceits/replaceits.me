@@ -4,8 +4,8 @@ html, body{
 	width: 100%;
 	max-width: 100%;
 	font-size: 100%;
-	overflow: hidden;
+	overflow-x: hidden;
 	background: $color-background $image-background-noise repeat;
-	color: $color-primary;
+	color: $color-white;
 	font-family: $font-primary;
 }

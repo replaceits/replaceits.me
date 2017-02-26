@@ -1,0 +1,84 @@
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px){
+	html{
+		font-size: 140%;
+	}
+
+	.content-skills-section{
+		min-width: 100vw;
+		width: 100vw;
+	}
+
+	.content-project-description{
+		min-width: 90vw;
+		width: 90vw;
+
+		font-size: 1.25em;
+
+		margin-top: 50px;
+
+		& .content-skills-section{
+			min-width: 100%;
+			width: 100%;
+		}
+
+		&:nth-child(2){
+			order: 3;
+		}
+
+		&:nth-child(3){
+			order: 4;
+		}
+	}
+
+	.content-project-image-container{
+		&:nth-child(1){
+			order: 1;
+		}
+		&:nth-child(4){
+			order: 2;
+		}
+	}
+
+	.content-page#Footer{
+		font-size: 0.9em;
+
+		& .content-wrapper{
+			& .content-footer-item{
+				&:first-child{
+					margin-left: 5px;
+				}
+
+				&:last-child{
+					margin-right: 5px;
+				}
+			}
+		}
+	}
+
+	.contact-form{
+		min-width: 90vw;
+		width: 90vw;
+		max-width: 90vw;
+
+		& .contact-info{
+			flex-direction: column;
+
+			& input{
+				min-width: 100%;
+				width: 100%;
+				max-width: 100%;
+
+				&#input-name{
+					margin-right: 0px;
+					margin-bottom: 0.5rem;
+				}
+			}
+		}
+	}
+
+	.submit-button{
+		min-width: 100%;
+		width: 100%;
+		max-width: 100%;
+	}
+}

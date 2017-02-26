@@ -1,18 +1,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
-		<loc>http://www.replaceits.me/</loc>
+		<loc>https://www.replaceits.me/</loc>
 		<changefreq>monthly</changefreq>
 		<priority>1.00</priority>
 	</url>
 	<url>
-		<loc>http://www.replaceits.me/</loc>
+		<loc>https://www.replaceits.me/kana-totsugeki/</loc>
 		<changefreq>monthly</changefreq>
-		<priority>1.00</priority>
+		<priority>1</priority>
 	</url>
 	<url>
-		<loc>https://replaceits.me</loc>
-		<lastmod>2017-01-30T02:19:41+00:00</lastmod>
+		<loc>https://www.replaceits.me/files/SidneyWilliamsResume.pdf</loc>
 		<changefreq>monthly</changefreq>
-		<priority>1.00</priority>
+		<priority>0.5</priority>
 	</url>
 </urlset>

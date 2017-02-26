@@ -1,6 +1,8 @@
 User-agent: *
 Disallow: /scss/
 Disallow: /errors/
+Disallow: /message.php
+Disallow: /humans.txt
 Allow: /
 
 Sitemap: https://www.replaceits.me/sitemap.xml

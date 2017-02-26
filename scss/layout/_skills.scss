@@ -1,0 +1,29 @@
+.content-skills-container{
+	min-width: 100vw;
+	width: 100vw;
+	max-width: 100vw;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-items: center;
+	align-content: center;
+	justify-content: space-around;
+}
+
+.content-skills-section{
+	align-items: center;
+	align-content: center;
+	min-width: 50vw;
+	max-width: 100vw;
+	margin-top: 25px;
+	text-align: center;
+}
+
+.content-skill{
+	display: inline-block;
+	font-size: 3em;
+	margin-right: 0.75em;
+	&:last-child{
+		margin-right: 0;
+	}
+}

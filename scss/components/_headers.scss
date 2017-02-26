@@ -1,0 +1,27 @@
+.header-name, .find-me-item{
+	flex: 1 1 0;
+	align-self: center;
+	vertical-align: middle;
+
+	text : {
+		align: center;
+	}
+}
+
+.header-name, .content-header{
+	text-transform: uppercase;
+	font-family: $font-header;
+	text-align: center;
+	letter-spacing: 0.15em;
+	font-weight: 800;
+	font-size: 3em;
+}
+
+.content-sub-header{
+	text-transform: uppercase;
+	font-family: $font-header;
+	text-align: center;
+	letter-spacing: 0.15em;
+	font-weight: 800;
+	font-size: 1.75em;
+}

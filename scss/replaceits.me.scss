@@ -6,102 +6,23 @@
 
 ////Layout////
 @import "layout/base";
+@import "layout/page";
+@import "layout/skills";
+@import "layout/project";
 @import "layout/footer";
 
 ////Components////
 @import "components/anchor";
 @import "components/buttons";
+@import "components/headers";
+@import "components/findme";
+@import "components/images";
+@import "components/contact";
+@import "components/misc";
 
-.content-container{
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	width: 35em;
-	display: flex;
-	flex-direction: column;
-
-	align : {
-		content: center;
-		items: stretch;
-	}
-
-	flex-wrap: nowrap;
-}
-
-.header-name, .find-me-item{
-	flex: 1 1 0;
-	align-self: center;
-	vertical-align: middle;
-
-	font : {
-		weight: 700;
-		size: 4em;
-	}
-
-	text : {
-		align: center;
-		shadow: -1px 1px 1px rgba(0,0,0,0.25);
-	}
-
-	letter-spacing: 0.05em;
-}
-
-.find-me{
-	display: flex;
-	
-	flex : {
-		direction: row;
-		wrap: nowrap;
-	}
-
-	align : {
-		items: center;
-		content: stretch;
-	}
-}
-
-.find-me-item{
-	display: inline;
-
-	flex : {
-		grow: 1;
-		basis: auto;
-	}
-
-	align-self: center;
-	text-align: center;
-	vertical-align: middle;
-}
-
-.description{
-	font-size: 1.125em;
-
-	flex: 1 1 0;
-	width: 27em;
-
-	align-self: center;
-	vertical-align: middle;
-}
-
-.left{
-	text-align: left;
-}
-
-.right{
-	text-align: right;
-}
-
-.center{
-	text-align: center;
-}
-
-.justify{
-	text : {
-		align: justify;
-		justify: inter-word;
-	}
-}
+////Overrides////
+@import "overrides/fontawesome";
 
 ////Mobile////
-@import "layout/mobile";
+@import "support/desktop";
+@import "support/mobile";
