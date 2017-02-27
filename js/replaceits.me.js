@@ -119,8 +119,7 @@ $(document).ready(function(){
     $('#input-message').change( messageNameChange ).keypress( messageNameChange ).on( 'paste', messageNameChange).on( 'input', messageNameChange );
 
     // Check if mobile device
-    if(window.matchMedia("only screen and (min-device-width: 320px) and (max-device-width: 480px)")){
-
+    if(window.matchMedia("only screen and (min-device-width: 320px) and (max-device-width: 480px)").matches){
         // This will prevent the page from jumping when the address bar hides
         // by setting the content pages height to it's own height in px on document
         // load rather than having it in 'vh' units.
