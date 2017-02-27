@@ -16,7 +16,9 @@ Simply run `make` in the root of this project and it will auto-compile/build/com
 Make sure you have a LAMP stack and `mv` the contents of the `./build/replaceits.me/` directory to the server root. (For EX. `/var/www/html/` or `/srv/http`)
 
 ## Contributing
-If you find a bug/error anywhere in the site please feel free to submit an issue. If you have a fix then please submit a pull request as well and I will verify and merge if applicable.
+If you find a bug/error anywhere in the site please feel free to submit an issue. If you have a fix then please submit a pull request as well and I will verify and merge if applicable.  
+  
+Any and all images should be compressed/minified. I'm currently using [`image_optim`](https://github.com/toy/image_optim) to achieve this.
 
 ## Licensing
 ```
