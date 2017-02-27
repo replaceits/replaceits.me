@@ -14,8 +14,23 @@
 	align-content: space-between;
 }
 
-.content-project-divider{
-	height: 4em;
+.content-wrapper{
+	& .content-project-divider{
+		display: block;
+		height: 4em;
+
+		&:nth-child(3){
+			background: $color-midway-1 $image-background-noise repeat;
+		}
+
+		&:nth-child(5){
+			background: $color-midway-2 $image-background-noise repeat;
+		}
+
+		&:nth-child(7){
+			background: $color-midway-3 $image-background-noise repeat;
+		}
+	}
 }
 
 .content-project-description{

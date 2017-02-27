@@ -48,8 +48,12 @@
 			background: $color-background-kana-totsugeki $image-background-noise repeat;
 		}
 
+		& #UniversalCD{
+			background: $color-background-universalcd $image-background-noise repeat;
+		}
+
 		& #Replaceits{
-			background: $color-background-kana-replaceits $image-background-noise repeat;
+			background: $color-background-replaceits $image-background-noise repeat;
 		}
 	}
 
