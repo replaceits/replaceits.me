@@ -100,6 +100,14 @@
         exit(0);
     }
 
+    mail($email, "Contact Form - " . $name, $message, 
+        'From: contact@replaceits.me' . "\r\n" .
+        'MIME-Version: 1.0' . "\r\n" .
+        'Content-Type: text/plain; charset=utf-8' . "\r\n" .
+        'X-Priority: 1' . "\r\n" .
+        'X-Mailer: PHP/' . phpversion() . "\r\n"
+    );
+
     http_response_code(200);
     echo("Success");
     exit(0);
