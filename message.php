@@ -100,9 +100,9 @@
         exit(0);
     }
 
-    mail("sharpcut2231@gmail.com", "Contact Form - " . $name, $email . "\n" . $message, 
+    mail("sidwil0790@students.ecpi.edu", "Contact Form - " . $name, $email . "\n\n" . $message, 
         'From: contact@replaceits.me' . "\r\n" .
-        'Reply-To: contact@replaceits.me' . "\r\n" .
+        'Reply-To: ' . $email . "\r\n" .
         'MIME-Version: 1.0' . "\r\n" .
         'Content-Type: text/plain; charset=utf-8' . "\r\n" .
         'X-Priority: 1' . "\r\n" .
