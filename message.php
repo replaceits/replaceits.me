@@ -100,8 +100,9 @@
         exit(0);
     }
 
-    mail($email, "Contact Form - " . $name, $message, 
+    mail("sharpcut2231@gmail.com", "Contact Form - " . $name, $email . "\n" . $message, 
         'From: contact@replaceits.me' . "\r\n" .
+        'Reply-To: ' . $email . "\r\n" .
         'MIME-Version: 1.0' . "\r\n" .
         'Content-Type: text/plain; charset=utf-8' . "\r\n" .
         'X-Priority: 1' . "\r\n" .
