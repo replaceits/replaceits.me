@@ -30,7 +30,8 @@
 
 		<title>replaceits - Sidney Williams</title>
 
-		<base href="https://www.replaceits.me/">
+		<!--<base href="https://www.replaceits.me/">-->
+		<base href="https://replaceits.com/replaceits.me/build/replaceits.me/">
 
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato|Open+Sans:400,800">
 		<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
@@ -426,9 +427,17 @@
 					</div>
 					<div class="contact-form">
 						<div class="contact-info">
-							<input type="text" id="input-name" name="name" maxlength="255" placeholder="Name" autocomplete="name" required>
-							<input type="email" id="input-email" name="email" maxlength="255" placeholder="Email" autocomplete="email" required>
+							<div>
+								<label for="input-name">Name</label>
+								<input type="text" id="input-name" name="name" maxlength="255" placeholder="Name" autocomplete="name" required>
+							</div>
+							<div>
+								<label for="input-email">Email</label>
+								<input type="email" id="input-email" name="email" maxlength="255" placeholder="Email" autocomplete="email" required>
+							</div>
 						</div>
+						<br>
+						<label for="input-message">Message</label>
 						<textarea maxlength="5000" id="input-message" placeholder="Type your message..." autocomplete="false" required></textarea>
 						<span class="right"><span class="input-count">0</span>/5000</span>
 						<div class="g-recaptcha" id="g-recaptcha" data-callback="recaptchaCallback" data-expired-callback="recaptchaExpiredCallback" data-theme="dark" data-sitekey="6LcFJhUUAAAAAFgr8GRnQLjSX_XDSY5qrRWlkOpC"></div>

@@ -9,8 +9,15 @@
 
     flex-direction: column;
 
+    color: $color-white;
+
     *:focus {
         outline: none;
+    }
+
+    & label{
+        font-size: 1em;
+        font-weight: 700;
     }
     
     & .contact-info{
@@ -61,7 +68,6 @@
             }
 
             &#input-email{
-                
             }
         }
     }
@@ -72,7 +78,7 @@
 
         resize: none;
 
-        padding: 1px 1px 1px 1px;
+        padding: 5px;
 
         border: 0px solid rgba(0,0,0,0);
 
